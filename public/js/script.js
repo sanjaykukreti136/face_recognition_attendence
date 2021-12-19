@@ -7,7 +7,7 @@ let count = [];
 // var json2xls = require('json2xls');
 // import json2xls from '../../node_modules/json2xls';
 
-const labels = ['Sanjay', 'Shubham', 'Manav', 'Manoti']
+const labels = ['Sanjay', 'Shubham', 'Manav', 'Manoti' , 'Pashu']
 Promise.all([
     faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
     faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
