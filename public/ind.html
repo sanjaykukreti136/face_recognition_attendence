@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
+    <title>Face Recognition</title>
+    
+    <!-- <script data-main="scripts/app" src="scripts/require.js"></script> -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        canvas {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<div>
+
+    <video id="videoInput" width="720" height="550" muted controls>
+
+        <script defer async src="./js/face-api.min.js"></script>
+        <script defer async src="./js/script.js" type="module"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+        <br>
+        <hr>
+        <button onclick="send_file()">SEND ATTENDECE</button>
+
+    </div>
+
+</html>

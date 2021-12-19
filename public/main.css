@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Philosopher', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),#009688), url('https://www.gehu.ac.in/content/dam/gehu/Image-Galleries/HeaderFiles/gehu-dehradun.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    background: rgba(26, 141, 194, 0.144);
+    color: cornsilk;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo {
+    padding-left: 3vw;
+    padding-top: 2vw;
+    font-size: 1.2vw;
+}
+
+.menu {
+    display: flex;
+    padding-top: 2vw;
+    margin-left: 0;
+}
+
+nav .menu a:first-child {
+    color: #3a9109;
+    font-size: 20px;
+}
+
+main {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+section {}
+
+section h3 {
+    font-size: 6.2vw;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+
+section h1 {
+    margin-top: 30px;
+    font-size: 3vw;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 30px;
+    word-spacing: 3px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: rgb(163, 107, 22);
+    text-transform: uppercase;
+    font-size: 15px;
+    color: chartreuse;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+section a.button1 {
+    background: #fff;
+    color: #000;
+}
+
+section a.button2 {
+    background: #F1C40F;
+    color: #000;
+}
+
+nav div h1.animate__animated animate__bounce {
+    animation: infinite;
+    animation-iteration-count: infinite;
+}
+
+.changee:after {
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: rgb(255, 0, 242);
+}
+
+@keyframes changetext {
+    0% {
+        content: "SHARE";
+    }
+    15% {
+        content: "BUY";
+    }
+    28% {
+        content: "EARN";
+    }
+    35% {
+        content: "HELP";
+    }
+    45% {
+        content: "SHARE";
+    }
+    55% {
+        content: "BUY";
+    }
+    65% {
+        content: "EARN";
+    }
+    75% {
+        content: "HELP";
+    }
+    85% {
+        content: "SHARE";
+    }
+    92% {
+        content: "BUY";
+    }
+    100% {
+        content: "EARN";
+    }
+}
+
+nav {
+    background: rgba(29, 34, 33, 0.5);
+    height: 65px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 2vw;
+    line-height: 70px;
+    padding: 0 100px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.bttn a:hover {
+    background: black;
+    color: white;
+    transition: .5s;
+}
+
+label:hover {
+    color: rgb(241, 205, 232);
+}
+
+a:hover {
+    background: #009688;
+    color:none;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+.button1 a:hover{
+    background: none;
+}
+#navbar
+{
+    width:250px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top:0;
+    background: #009688;
+    z-index: 2;
+}
+.logo
+{
+    width: 200x;
+    font-size: 40px;
+    color: white;
+    height: auto;
+    padding: 10px 5px ;
+}
+#navbar ul li{
+    list-style:  none;
+    margin: 50px 20px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: 'Robato',sans-serif;
+}
+#navbar ul li a.active,
+#navbar ul li a:hover
+{
+ background:brown;
+ border-radius: 2px;
+}
+.buttons
+{
+    margin:70px auto 0;
+}
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color :white;
+    background:rgb(189, 46, 46);
+    border: 1px solid;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 0 10px;
+    transition: 0.5s;
+    position: relative;
+}
+.buttons button:hover{
+    background: none;
+}
+a{
+    color: white;
+}
+#manubtn
+{
+    width: 50px;
+    height: 50px;
+    background: #009688;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#manubtn img
+{
+    width: 20px;
+    margin-top: 15px;
+}
