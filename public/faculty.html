@@ -11,45 +11,33 @@
 
 <body>
   <header>
+<h1>STUDENTS DATA</h1>
+<table id="customers">
+  <tr>
+    <th>Name</th>
+    <th>Course</th>
+    <th>Rollno</th>
+    <!-- <th>Enter In Class</th> -->
+  </tr>
+</table>
     <!-- <button onclick="zoom()">ZOOM</button> -->
     <button onclick="white()">START CLASS</button>
-    <!-- <section class="gallery">
-      <div class="gallery__item">
-        <input type="radio" id="img-1" checked name="gallery" onclick="detect(1)" class="gallery__selector" />
-        <img class="gallery__img" src="https://picsum.photos/id/1015/600/400.jpg" alt="" />
-        <label for="img-1" class="gallery__thumb"><img src="https://picsum.photos/id/1015/150/100.jpg" alt="" /></label>
-      </div>
-      <div class="gallery__item">
-        <input type="radio" id="img-2" name="gallery" onclick="detect(2)" class="gallery__selector" />
-        <img class="gallery__img" src="https://picsum.photos/id/1039/600/400.jpg" alt="" />
-        <label for="img-2" class="gallery__thumb"><img src="https://picsum.photos/id/1039/150/100.jpg" alt="" /></label>
-      </div>
-      <div class="gallery__item">
-        <input type="radio" id="img-3" onclick="detect(3)" name="gallery" class="gallery__selector" />
-        <img class="gallery__img" src="https://picsum.photos/id/1057/600/400.jpg" alt="" />
-        <label for="img-3" class="gallery__thumb"><img src="https://picsum.photos/id/1057/150/100.jpg" alt="" /></label>
-      </div>
-      <div class="gallery__item">
-        <input type="radio" id="img-4" onclick="detect(4)" name="gallery" class="gallery__selector" />
-        <img class="gallery__img" src="https://picsum.photos/id/106/600/400.jpg" alt="" />
-        <label for="img-4" class="gallery__thumb"><img src="https://picsum.photos/id/106/150/100.jpg" alt="" /></label>
-      </div>
-    </section> -->
-    <!-- <div id="camera">
-      <video id="videoInput" width="720" height="550" muted controls>
 
-        <script defer async src="./js/face-api.min.js"></script>
-        <script defer async src="./js/script.js" type="module"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
-        <br>
-        <hr>
-        <button onclick="send_file()">SEND ATTENDECE</button>
-
-    </div> -->
 
   </header>
   <script>
+    let table = document.getElementById('customers');
+    let data = [['Sanjay', 'BTECH', '1918156'], ['ABC', 'BTECH', '1918190'], ['DEF', 'BTECH', '1918199'], ['GHI', 'BTECH', '1918156'], ['XYZ', 'BTECH', '1918156']
+      , ['ROHAN', 'BTECH', '19181236'], ['Rohit', 'BTECH', '1918111']]
+
+    for (let i = 0; i < data.length; i++) {
+      table.innerHTML = table.innerHTML + `<tr>
+            <td>${data[i][0]}</td>
+            <td>${data[i][1]}</td>
+            <td>${data[i][2]}</td>
+        </tr>`
+      console.log(data[i][0] + data[i][2]);
+    }
     function white() {
       window.location.href = 'http://localhost:4000/white.html';
     }

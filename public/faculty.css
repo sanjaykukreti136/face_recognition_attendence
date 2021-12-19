@@ -9,7 +9,38 @@
     background-size: cover;
 
 }
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+button{
+  width: 8rem;
+    height: 3rem;
+    background-color: darkgoldenrod;
+    font-size: 0.9rem;
+    color: blue;
+    font-weight: bold;
+    margin-top: 6rem;
+    margin-left: 1vw;
+}
   img {
     max-width: 100%;
     vertical-align: top;

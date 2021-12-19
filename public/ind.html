@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
     <title>Face Recognition</title>
-    
+
     <!-- <script data-main="scripts/app" src="scripts/require.js"></script> -->
     <style>
         body {
@@ -18,6 +18,10 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         }
 
         canvas {
@@ -36,8 +40,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
         <br>
         <hr>
-        <button onclick="send_file()">SEND ATTENDECE</button>
+        <!-- <button onclick="send_file()">SEND ATTENDECE</button> -->
 
-    </div>
+</div>
 
 </html>

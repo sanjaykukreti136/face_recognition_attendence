@@ -55,9 +55,10 @@ main {
 section {}
 
 section h3 {
-    font-size: 6.2vw;
-    font-weight: 200;
+    font-size: 4.2vw;
+    font-weight: 170;
     letter-spacing: 3px;
+    margin-bottom: 50px;
     text-shadow: 3px 3px 3px rgb(0, 0, 0);
 }
 
@@ -252,8 +253,9 @@ a:hover {
     margin:70px auto 0;
 }
 .buttons button{
-    height: 50px;
-    width: 150px;
+    margin-top: 50px;
+    height: 150px;
+    width: 350px;
     font-size: 18px;
     font-weight: bold;
     color :white;
