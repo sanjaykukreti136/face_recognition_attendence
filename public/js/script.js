@@ -70,7 +70,7 @@ async function recognizeFaces() {
 
                 } else if (myArray[0] == 'Sanjay') {
                     alert('face detected user = ' + myArray[0]);
-                    window.location.href = 'http://localhost:4000'
+                    window.location.href = 'https://drawinghjklop.herokuapp.com/'
                 }
 
                 if (myArray[0] == 'unknown' && count1.length < 6) {
